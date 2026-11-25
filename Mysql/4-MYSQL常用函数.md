@@ -32,7 +32,7 @@ SELECT * FROM stu WHERE MONTH(birthday)=MONTH(NOW()) AND
 DAYOFMONTH(birthday)=DAYOFMONTH(NOW());
 
 查询本周过生日的学生信息
-SELECT * FROM stu WHERE RIGHT(birthday, 5) > RIGHT(DATE_FORMAT(ADDDATE(NOW(), -
+SELECT * FROM stu WHERE RIGHT(birthday, 5) > RIGHT(DATE_FORMAT(ADDDATE(NOW(),
 DAYOFWEEK(NOW())), '%Y-%m-%d'), 5) AND RIGHT(birthday, 5) <=
 RIGHT(DATE_FORMAT(ADDDATE(NOW(),7-DAYOFWEEK(NOW())), '%Y-%m-%d'), 5);
 ```

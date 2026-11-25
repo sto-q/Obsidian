@@ -8,7 +8,7 @@ FROM 表名 WHERE 查询条件
 ALL表示查询所有满足条件的记录，可以省略；DISTINCT表示去掉查询结果中重复的记录
 AS可以给数据列、数据表取一个别名
 
-#  比较操作符
+#  比较操作符（我感觉一般用于查询条件）
 
 ![[Pasted image 20260909081815.png]]
 
@@ -77,7 +77,7 @@ avg(score)>74;
 SELECT ALL/DISTINCT * | 字段名1 AS 别名1[,字段名1 AS 别名1, ..., 字段名n AS 别名n]
 FROM 表名 WHERE 查询条件 ORDER BY 字段名1 ASC|DESC，字段名2 ASC|DESC,..., 字段名n
 ASC|DESC
-
+ASC是升序排列 EDSC是降序排列 不写就默认ASC
 ORDER BY 必须位于WHERE 条件之后
 ```
 
